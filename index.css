@@ -1,0 +1,978 @@
+
+/* 
+Developed By-
+TANMAY : https://www.linkedin.com/in/tanmaybarvi/
+TANVI : https://www.linkedin.com/in/tanvinaik30
+*/
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gulzar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sarabun&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+/* --------------------------------------- DEFAULT ------------------------- */
+*,
+:after,
+:before {
+    box-sizing: border-box
+}
+
+li {
+    list-style: none
+}
+
+html {
+    font-family: 'Roboto', Helvetica, Urbanist , Merriweather, Plus Jakarta Sans, Arial, sans-serif ;
+    font-size: 16px;
+    line-height: 1.15
+}
+
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section {
+    display: block
+}
+
+body {
+    background-color: #fff;
+    color: #212529;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif ;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    text-align: left
+}
+
+button:not(:disabled) {
+    cursor: pointer
+}
+
+/* start */
+.prep-l-content {
+    zoom: 1;
+    margin: 0 auto;
+    max-width: 1440px;
+    min-width: 256px;
+    padding: 48px 24px;
+    position: relative
+}
+
+.prep-l-content:after {
+    clear: both;
+    content: "";
+    display: block;
+    height: 0;
+    visibility: hidden
+}
+
+.prep-l-content.prep-t-content-xl {
+    max-width: 1152px
+}
+
+
+.prep-l-content>:last-child {
+    margin-bottom: 0
+}
+
+@media(min-width:768px) {
+    .prep-l-content {
+        padding: 20px 64px;
+
+    }
+}
+
+@media(min-width:1312px) {
+    .prep-l-content {
+        padding: 96px 80px;
+    }
+}
+
+
+/* -------------------------------  GET IN BUTTON ---------------------------- */
+.get-in-home-btn{
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 4px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Roboto', serif;
+    font-size: 16px;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5;
+    padding: 6px 24px;
+    color: #fff;
+    text-decoration: none !important;
+    -webkit-transition: background-color .1s, box-shadow .1s, color .1s;
+    transition: background-color .1s, box-shadow .1s, color .1s
+}
+
+/* updated background color */
+.prepbook-homepage .get-in-home-btn {
+    background-color: #EF7500 ;
+    border: 0;
+}
+
+.prepbook-homepage .get-in-home-btn:active,
+.prepbook-homepage .get-in-home-btn:focus,
+.prepbook-homepage .get-in-home-btn:hover {
+    background-color: #c1a6e2;
+    color: #fff
+}
+.get-in-home-btn::-moz-focus-inner {
+    border: 0;
+}
+
+
+/* --------------------------------  HEADER CSS ------------------------------------- */
+.prepbook-header.platform {
+    background-color: #f9f9fa;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .15)
+}
+
+.platform-header {
+    align-items: center;
+    display: flex;
+    height: 74px;
+    margin: 0 auto;
+    max-width: 1024px;
+    padding: 0 16px
+}
+
+.platform-header .prep-logo {
+    margin: 0 auto
+}
+
+.platform-header .header-navigation {
+    display: none;
+    line-height: 1;
+    white-space: nowrap
+}
+
+.platform-header .header-navigation .header-navigation-list {
+    display: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0
+}
+
+.platform-header .header-navigation .header-navigation-list .header-navigation-list-item {
+    display: inline-block;
+    margin: 0;
+    padding: 0
+}
+
+.platform-header .header-navigation .header-navigation-list .header-navigation-list-item .header-navigation-list-item-link {
+    color: #1a1a1a;
+    font-family: 'Roboto', serif;
+    font-size: 14px;
+    font-size: .875rem;
+    line-height: 1.5;
+    margin: 24px 4px;
+    text-decoration: none
+}
+
+.platform-header .header-navigation .header-navigation-list .header-navigation-list-item .header-navigation-list-item-link:active,
+.platform-header .header-navigation .header-navigation-list .header-navigation-list-item .header-navigation-list-item-link:focus,
+.platform-header .header-navigation .header-navigation-list .header-navigation-list-item .header-navigation-list-item-link:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 1px
+}
+
+.platform-header .header-navigation .header-navigation-list .header-navigation-list-item .header-navigation-list-item-link.get-in-black {
+    background-color: #1a1a1a;
+    border: 2px solid #1a1a1a;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 12px;
+    font-size: .75rem;
+    font-weight: 500;
+    line-height: 1.5;
+    padding: 3px 16px;
+    transition: all .1s ease-in-out
+}
+
+.platform-header .header-navigation .header-navigation-list .header-navigation-list-item .header-navigation-list-item-link.get-in-black:active,
+.platform-header .header-navigation .header-navigation-list .header-navigation-list-item .header-navigation-list-item-link.get-in-black:focus,
+.platform-header .header-navigation .header-navigation-list .header-navigation-list-item .header-navigation-list-item-link.get-in-black:hover {
+    background-color: rgba(0, 0, 0, 0);
+    color: #1a1a1a;
+    text-decoration: none
+}
+
+@media(min-width:768px) {
+    .platform-header .header-navigation .header-navigation-list .header-navigation-list-item .header-navigation-list-item-link.get-in-black {
+        margin-left: 20px;
+    }
+    .platform-header .header-navigation {
+        display: flex;
+        flex-grow: 2;
+        justify-content: flex-end;
+    }
+    .platform-header .header-navigation .header-navigation-list {
+        display: flex;
+    }
+    .platform-header .header-navigation .header-navigation-list-item-link {
+        padding: 24px 16px;
+    }
+}
+
+
+
+/*> FONT TO BE USED */
+
+.main-title{
+    font-family: 'Playfair Display' ,Merriweather , Roboto;
+   
+}
+
+
+.main-traction-font{
+    font-family: 'Inter', sans-serif;
+   
+}
+
+/* .section-lede -> Helvitica */
+/* meet team desc */
+.small-title{
+    font-family: Helvetica, sans-serif;
+    
+}
+
+/* careers */
+.career-font{
+    /*font-family: Roboto , Helvetica ;*/
+    font-family: 'Bricolage Grotesque', sans-serif;
+
+}
+
+/*  ------------------------------------------------ MAIN  -------------------------------------------------------------*/
+.main-container {
+    overflow: hidden
+}
+
+
+/* ---------------------------- MAIN -> DIV ------------------------------------ */
+.prepbook-homepage {
+    color: #1a1a1a;
+    font-family: 'Roboto', sans-serif;
+}
+
+.prepbook-homepage .prepbook-homepage-header .prep-l-split-media-overflow {
+    left: 40%;
+    transform: translateX(-40%);
+    width: 145%;
+}
+
+@media(min-width:768px) {
+    .prepbook-homepage .prepbook-homepage-header .prep-l-split-media-overflow {
+        left: unset;
+        transform: unset;
+        width: 100%
+    }
+}
+
+
+@supports(display:grid) {
+    @media(min-width: 768px) {
+        .prep-c-split-media.prep-l-split-media-overflow .prep-c-split-media-asset {
+            max-width:none
+        }
+        .prep-l-split-pop-top.prep-c-split,
+        .prep-l-split-pop.prep-c-split {
+            padding-top: 96px
+        }
+        .prep-l-split-pop .prep-c-split-media,
+        .prep-l-split-pop-top .prep-c-split-media {
+            margin-top: -48px
+        }
+        .prep-c-split-bg .prep-l-split-pop .prep-c-split-media,
+        .prep-c-split-bg .prep-l-split-pop-top .prep-c-split-media {
+            margin-top: -96px
+        }
+        .prep-l-split-pop-bottom.prep-c-split,
+        .prep-l-split-pop.prep-c-split {
+            padding-bottom: 96px
+        }
+        .prep-l-split-pop .prep-c-split-media,
+        .prep-l-split-pop-bottom .prep-c-split-media {
+            margin-bottom: -48px
+        }
+        .prep-c-split-bg .prep-l-split-pop .prep-c-split-media,
+        .prep-c-split-bg .prep-l-split-pop-bottom .prep-c-split-media {
+            margin-bottom: -96px
+        }
+    }
+}
+
+/* ------------ SECTION --------- 1 */
+
+.prep-c-split-media-asset {
+    display: block;
+    max-width: 100%
+}
+
+.prepbook-homepage .prepbook-homepage-header .prep-c-split-media-asset {
+    max-height: 900px;
+    width: auto;
+}
+
+@media(min-width:768px) {
+    .prepbook-homepage .prepbook-homepage-header.prep-l-split-pop {
+        padding-top: 0;
+    }
+}
+
+.prepbook-homepage .section-heading {
+    font-family: 'Playfair Display', sans-serif ;
+    /*font-family: 'Orbitron', sans-serif;*/
+    /*font-family: 'Sarabun', sans-serif;*/
+    /*font-family: 'Quattrocento', serif;*/
+    /*font-family: 'Averia Serif Libre', serif;*/
+    /*font-family: 'Gurajada', sans-serif;*/
+    /*font-family: 'Ibarra Real Nova', serif;*/
+    font-size: 48px;
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 1;
+    line-height: 1.1;
+}
+
+@media(min-width:768px) {
+    .prepbook-homepage .section-heading {
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 1.4;
+    }
+}
+
+.prepbook-homepage .sub-section-heading{
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.prepbook-homepage .section-lede {
+    /*font-family: Helvetica, sans-serif;*/
+    font-family: 'Sarabun', sans-serif;
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 1.5
+}
+
+.prepbook-homepage .prepbook-homepage-get-btn {
+    margin-top: 32px;
+    text-align: center
+}
+
+@media(min-width:768px) {
+    .prepbook-homepage .prepbook-homepage-get-btn {
+        text-align: left
+    }
+}
+
+
+/*--------------------------- FEATURES -----------------------  */
+.prepbook-homepage .prepbook-homepage-features {
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 1.5;
+    padding-bottom: 48px;
+    padding-top: 32px;
+    position: relative
+}
+
+.prepbook-homepage .prepbook-homepage-features h2 {
+    font-family: 'Playfair Display' ,Merriweather , Roboto;
+    font-size: 38px;
+    font-size: 2.375rem;
+    font-weight: 500;
+    line-height: 1.05;
+    text-align: center
+}
+
+@media(min-width:768px) {
+    .prepbook-homepage .prepbook-homepage-features h2 {
+        font-size: 48px;
+        font-size: 3rem;
+        font-size: 28px;
+        font-size: 1.75rem;
+        line-height: 1;
+        line-height: 1.07;
+        text-align: left
+    }
+}
+
+@media(min-width:768px)and (min-width:768px) {
+    .prepbook-homepage .prepbook-homepage-features h2 {
+        font-size: 38px;
+        font-size: 2.375rem;
+        line-height: 1.05
+    }
+}
+
+.prepbook-homepage .prepbook-homepage-features .prep-u-list-styled {
+    margin-bottom: 24px;
+}
+
+.prepbook-homepage .prepbook-homepage-features .prep-u-list-styled li {
+    padding: 10px;
+}
+
+.prepbook-homepage .prepbook-homepage-features .prep-u-list-styled li i {
+    margin-right: 10px;
+    font-size: 6.5px;
+}
+
+.prepbook-homepage .prepbook-homepage-features:after,
+.prepbook-homepage .prepbook-homepage-features:before {
+    background-position: 0;
+    background-repeat: repeat-x;
+    background-size: 1516px 18px;
+    content: "";
+    height: 18px;
+    left: 0;
+    position: absolute;
+    visibility: visible;
+    width: 100%
+}
+
+@media(min-width:768px) {
+    .prepbook-homepage .prepbook-homepage-features {
+        padding-bottom: 64px;
+        padding-top: 64px
+    }
+}
+
+/* prep-c-split-container */
+.prep-c-split-container {
+    zoom: 1;
+    margin: 0 auto;
+    max-width: 1440px;
+    min-width: 304px;
+    padding: 0 24px;
+}
+
+.prep-c-split-container:after {
+    clear: both;
+    content: "";
+    display: block;
+    height: 0;
+    visibility: hidden
+}
+
+@media(min-width:768px) {
+    .prep-c-split-container {
+        padding: 0 64px;
+
+    }
+}
+
+@media(min-width:1312px) {
+    .prep-c-split-container {
+        padding: 0 80px
+    }
+}
+
+.prep-t-content-xl .prep-c-split-container {
+    max-width: 1152px
+}
+
+@supports(display:grid) {
+    @media(min-width: 768px) {
+        .prep-c-split-container {
+            grid-column-gap:64px;
+            align-items: center;
+            display: grid;
+            grid-template-areas: "body media";
+            grid-template-columns: 1fr 1fr
+        }
+        .prep-l-split-reversed .prep-c-split-container {
+            grid-template-areas: "media body"
+        }
+        .prep-c-split-container .prep-c-split-body,
+        .prep-c-split-container .prep-c-split-media {
+            float: none;
+            min-width: 0;
+            padding: 0;
+            width: 100%
+        }
+        .prep-c-split-body {
+            grid-area: body
+        }
+        .prep-c-split-media {
+            align-self: center;
+            grid-area: media;
+            justify-self: start
+        }
+        .prep-c-split-media .prep-c-split-media-asset {
+            display: block
+        }
+        .prep-l-split-reversed .prep-c-split-media {
+            justify-self: end
+        }
+    }
+    @media(min-width:1024px) {
+        .prep-l-split-body-narrow .prep-c-split-container {
+            grid-template-columns: 1fr 2fr
+        }
+        .prep-l-split-body-narrow.prep-l-split-reversed .prep-c-split-container,
+        .prep-l-split-body-wide .prep-c-split-container {
+            grid-template-columns: 2fr 1fr
+        }
+        .prep-l-split-body-wide.prep-l-split-reversed .prep-c-split-container {
+            grid-template-columns: 1fr 2fr
+        }
+    }
+    @media(min-width:1312px) {
+        .prep-c-split-container {
+            grid-column-gap: 80px
+        }
+    }
+}
+
+
+/* prep-c-split-body */
+.prep-c-split-body {
+    position: relative
+}
+
+.prep-c-split-body>:last-child {
+    margin-bottom: 0
+}
+
+.prep-c-split-body>:last-child>:last-child {
+    margin-bottom: 0
+}
+
+
+@media (max-width:767px) {
+    .prep-c-split-body+.prep-c-split-media,
+    .prep-c-split-media+.prep-c-split-body {
+        margin-top: 48px;
+    }
+    .prep-l-split-center-on-sm-md .prep-c-split-body,
+    .prep-l-split-center-on-sm-md .prep-c-split-media,
+    .prep-l-split-center-on-sm-md .prep-c-split-media-asset {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .prep-l-split-hide-media-on-sm-md .prep-c-split-body {
+        margin-top: 0;
+    }
+    .prep-l-split-hide-media-on-sm-md .prep-c-split-media {
+        display: none;
+    }
+}
+
+@media(min-width:768px) {
+    .prep-c-split-body {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        float: left;
+        padding: 0 32px;
+        width: 50%;
+    }
+    .prep-l-split-reversed .prep-c-split-body,
+    [dir=rtl] .prep-c-split-body {
+        float: right;
+    }
+    [dir=rtl] .prep-l-split-reversed .prep-c-split-body {
+        float: left;
+    }
+    .prep-c-split-media {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        float: right;
+        padding: 0 32px;
+        width: 50%;
+    }
+    .prep-l-split-reversed .prep-c-split-media,
+    [dir=rtl] .prep-c-split-media {
+        float: left
+    }
+    [dir=rtl] .prep-l-split-reversed .prep-c-split-media {
+        float: right
+    }
+}
+
+@media(min-width:1024px) {
+    .prep-l-split-body-narrow .prep-c-split-body {
+        width: 33.33%;
+    }
+    .prep-l-split-body-narrow .prep-c-split-media,
+    .prep-l-split-body-wide .prep-c-split-body {
+        width: 66.66%;
+    }
+    .prep-l-split-body-wide .prep-c-split-media {
+        width: 33.33%;
+    }
+}
+
+@media(min-width:1312px) {
+    .prep-c-split-body,
+    .prep-c-split-media {
+        padding: 0 40px
+    }
+}
+
+/* c-hero-badge */
+@media(min-width:768px) {
+    .prepbook-homepage .prepbook-homepage-header.prep-l-split-pop {
+        padding-top: 0;
+    }
+}
+
+.c-hero-badge {
+    align-items: center;
+    display: flex;
+}
+
+.c-hero-badge .prep-c-logo {
+    margin-bottom: 0;
+    margin-right: 8px;
+}
+
+.c-hero-badge .prep-c-logo.prep-t-logo-xs {
+    height: 20px;
+    width: 20px;
+}
+
+.c-hero-badge p {
+    font-size: 16px;
+    line-height: 2;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+/* .c-hero-badge p strong {
+    font-weight: 600;
+} */
+
+.c-hero-badge+h1 {
+    margin-top: 24px;
+}
+
+/* section features */
+@media(min-width:768px) {
+    .prep-l-columns {
+        grid-gap: 48px 64px;
+        display: grid;
+        gap: 48px 64px;
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    ol.prep-l-columns,
+    ul.prep-l-columns {
+        margin-bottom: 0
+    }
+}
+
+@media(min-width:1024px) {
+    .prep-l-columns {
+        grid-gap: 48px 80px;
+        gap: 48px 80px
+    }
+}
+
+/* ADDITINAL STYLES FOR -> aboutapp - userratings  */
+
+.col-md-6{
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 10px;
+}
+.user-desc{
+padding: 0 20px;
+}
+
+a:link, a:visited, a:hover, a:active{
+text-decoration: none;
+}
+
+
+.feature-icon .star {
+    color: #F5DF55;
+    font-size: 1.5rem
+  }
+/* > -------------------------  Meet the Team ------------------------------------- */
+
+  div.relative {
+    position: relative;
+    border-radius: 200px;
+    background: #EBDDFF;
+    width: 150px;
+    height: 150px;
+    margin-left: auto; 
+    margin-right: auto;
+  } 
+  
+  div.absolute {
+    position: absolute;
+    border-radius: 50%;
+    margin-top: 16px; 
+    margin-left: auto; 
+    margin-right: auto;
+  }
+
+.absolute img {
+    border-radius: 50%; 
+    border: 2px solid #333433; 
+}
+
+/* > ------------------------------------------------ MOBILE VIEW CSS ------------------------------------------------ */
+.cover-text{
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 2% 0 4% 0;
+}
+.prep{
+    font-weight: 400;
+}
+.book{
+    font-weight: 400;
+    color: rgba(59, 31, 228, 1);
+}
+
+.mobile-top{
+    margin-bottom: 4%;
+}
+.mobile-console{
+    width: 80%;
+    margin: 4% 0 0% 0 ;
+}
+
+.mobile-download-btn{
+    height: 7vh;
+    margin: 0 0 0 0 ;
+}
+.mobile-foot{
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+}
+.foot-text{
+    font-weight: 600;
+}
+.mobile-cover{
+    display: none;
+  }
+
+/* Text animation */
+.animated-text{
+    color: rgb(0, 0, 0);
+    padding: 0 5px;
+    height: 40px;
+    overflow: hidden;
+  }
+  
+  .line{
+    text-align: center;
+    line-height: 60px;
+  }
+  .line:first-child{
+    animation: anim 16s infinite;
+  }
+  
+  @keyframes anim {
+    0%{
+      margin-top: 0;
+    }
+    16%{
+      margin-top: -60px;
+    }
+    33%{
+      margin-top: -120px;
+    }
+    50%{
+      margin-top: -180px;
+    }
+    66%{
+      margin-top: -120px;
+    }
+    82%{
+      margin-top: -60px;
+    }
+    100%{
+      margin-top: 0;
+    }
+  }
+  
+
+  @media only screen and (max-width: 823px) {
+
+    .desktop{
+      display: none;
+    }
+
+    .mobile-cover , .mobile{
+      display: block;
+      margin-top: 5%;
+      visibility: visible;
+    }
+  }
+
+  .three-font{
+    font-size: 20px;
+  }
+
+
+  /* horizontal line */
+  .hr-img{
+    display:block;
+    border:0px;
+    height:16px;
+    background-image:url('https://static.vecteezy.com/system/resources/previews/010/709/887/large_2x/abstract-background-design-using-irregular-wave-patterns-in-purple-and-yellow-colors-free-photo.jpg');
+    margin-bottom: 10%;
+    width: auto;
+    }
+
+.openings wx {
+margin-top: 10px;
+    }
+
+.hidden {
+    display: none;
+    }
+    
+
+.job_list_container_1{
+    margin-top: 40px;
+    margin-left: 190px;
+    margin-right: 190px;
+    margin-bottom: 100px;
+        }
+
+
+.job opening_list_container{ 
+  margin-top: 200px;
+  margin-left: 190px;
+  margin-right: 190px;
+  margin-bottom: 100px;
+}
+
+.we_are_hiring_text_desc{
+    font-family: 'Inter' ,Merriweather , Roboto;
+    margin-left: 190px;
+    font-style:normal;
+    font-weight: 600;
+    margin-right: 180px;
+}
+
+
+.we_are_hiring_text{
+    margin-top: 40px;
+    margin-left: 190px;
+    margin-right: 20px;
+    font-family: 'Inter' ,Merriweather , Roboto;
+    font-weight: 400;
+    font-style: normal;
+    border-radius: 25px;
+    padding: 10px 20px;
+    background-color: #eeeeee;
+    border: 1.5px solid #0D0D0D;
+    display: inline-block;
+}
+
+.we_are_hiring_text_main{
+    margin-left: 190px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    font-family: 'Inter' ,Merriweather , Roboto;
+    font-weight: 900;
+    
+}
+
+.horizontal-line{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 190px;
+    margin-right: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;  
+    color: #1a1a1a;
+    
+}
+
+
+.job-card-body{
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-width: 10px;
+    border-color: #0D0D0D;
+    
+}
+
+.card-main_outer-body{
+    border: #000000;
+    border-width: 1px;
+    margin-top: 10px;
+    border-bottom: 20px;
+    background-color: #f9f9fa;
+    border: 1.5px solid #0D0D0D;
+    display: inline-block;
+    border-radius: 3px;
+}
+
+.card-title{
+    font-family: 'Inter' ,Merriweather , Roboto;
+    font-size: 1.5rem;
+    
+}
+
+.card-text{
+    margin-top: 5px;
+    font-family: 'Inter' ,Merriweather , Roboto;
+    font-size: 1.0rem;
+    margin-top: 14px;
+    margin-bottom: 14px;   
+}
+
+
+.card-text-extra{
+    font-family: 'Inter' ,Merriweather , Roboto;
+    font-size: 1.0rem;
+    display: inline-block;
+    margin-right: 22px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.card-title-apply a{
+    color: #000000;
+}
+
+.card-title-apply, #a:link, #a:visited,a:hover, a:active{
+    padding-top: 14px;
+    font-family: 'Inter' ,Merriweather , Roboto;
+    font-size: 1.0rem;
+    margin-top: 6px;
+    margin-bottom: 0px;    
+    text-decoration: underline;
+    text-decoration-color: black;
+}

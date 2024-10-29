@@ -822,15 +822,15 @@ text-decoration: none;
 
   @media only screen and (max-width: 823px) {
 
-    .desktop{
+    /* .desktop{
       display: none;
-    }
+    } */
 
-    .mobile-cover , .mobile{
+    /* .mobile-cover , .mobile{
       display: block;
       margin-top: 5%;
       visibility: visible;
-    }
+    } */
   }
 
   .three-font{
@@ -862,15 +862,8 @@ margin-top: 10px;
     margin-left: 190px;
     margin-right: 190px;
     margin-bottom: 100px;
-        }
-
-
-.job opening_list_container{ 
-  margin-top: 200px;
-  margin-left: 190px;
-  margin-right: 190px;
-  margin-bottom: 100px;
 }
+
 
 .we_are_hiring_text_desc{
     font-family: 'Inter' ,Merriweather , Roboto;
@@ -958,9 +951,7 @@ margin-top: 10px;
     font-family: 'Inter' ,Merriweather , Roboto;
     font-size: 1.0rem;
     display: inline-block;
-    margin-right: 22px;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    padding: 0 1rem;
 }
 
 .card-title-apply a{
@@ -975,4 +966,212 @@ margin-top: 10px;
     margin-bottom: 0px;    
     text-decoration: underline;
     text-decoration-color: black;
+}
+
+
+.privacy-policy{
+    text-align: justify;
+}
+
+
+@media(max-width:450px) {
+    .main-container{
+        max-width: 85%;
+        margin: 10% auto;
+    }
+
+    .prep-logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .prep-logo img{
+        width: 35% !important;
+        /* margin: 0 auto; */
+    }
+
+    .prepbook-homepage-header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .prep-c-split-body{
+        /* display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; */
+        text-align: center;
+    }
+
+    .c-hero-badge{
+        /* background-color: red; */
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .section-heading{
+        margin: 10% auto;
+        width: 80%;
+    }
+    
+    .hero-img{
+        display: none;
+    }
+
+
+
+    .prep-c-split-media-asset{
+        width: 80%;
+        padding-bottom: 2rem;
+    }
+
+
+
+    /* achievments */
+
+    .pc-view-achievments{
+        display: none;
+    }
+
+    .mob-view-achievments{
+        display: block !important;
+        width: 75vw;
+        justify-self: center;
+    }
+
+    .mob-ach-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .mob-ach-item{
+        text-align: center;
+        padding: 2em 1em;
+    }
+    .mob-ach-item h6{
+        text-align: center;
+    }
+
+    /* experiences */
+
+    .pc-view-experience *{
+        display: none !important;
+    }
+
+    .mob-view-experience{
+        display: block !important;
+    }
+
+    .mob-view-exp-card{
+        margin-top: 3rem;
+        background-color: #f5f5f4;
+        padding: 2rem;
+    }
+
+    .mob-view-card-header{
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+        gap: 1.5rem;
+        /* background-color: red; */
+        margin-bottom: 1rem;
+    }
+
+    .mob-view-user-pic{
+        width: 5rem;
+        border-radius: 50%;
+    }
+
+    .mob-view-user-name{
+        font-size: 1.25rem;
+    }
+
+    .small-title{
+        text-align: justify;
+    }
+    
+
+    #getin div p{
+        text-align: center;
+        padding-top: 1rem;
+    }
+
+
+    /* career page */
+
+    .job {
+        /* width: 80%; */
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .we_are_hiring_text{
+        margin: 5rem auto 2rem auto;
+        width: 40vw;
+        display: block;
+    }
+    
+    .we_are_hiring_text_main{
+        margin: 0 auto 2rem auto;
+        padding: 0 2rem;
+        display: block;
+        text-align: center;
+    }
+    
+    .we_are_hiring_text_desc{
+        margin: 0 auto 2rem auto;
+        padding: 0 2rem;
+    }
+    
+    .job_list_container_1{
+        margin: 0 auto 3rem auto;
+        padding: 1rem 2.5rem;
+    }
+
+
+    /* footer */
+
+    .pc-view-footer{
+        display: none !important;
+    }
+
+    .mob-view-footer{
+        display: block !important;
+        padding: 2rem;
+    }
+
+    .mob-footer-top{
+        display: flex;
+        gap: 2rem;
+    }
+
+    .mob-footer-prep-logo img{
+        width: 120px;
+    }
+
+    .mob-footer-pages-div{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .mob-footer-bottom{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mob-footer-socials{
+        margin: 10% 0 0 35%;
+    }
+
+    .mob-copyrights{
+        padding-top: 4rem;
+    }
 }

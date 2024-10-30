@@ -1134,6 +1134,15 @@ margin-top: 10px;
     }
 
 
+    /* about */
+    .feature{
+        margin: 0 !important;
+    }
+
+    .feature h2{
+        width: 400px;
+    }
+
     /* footer */
 
     .pc-view-footer{
